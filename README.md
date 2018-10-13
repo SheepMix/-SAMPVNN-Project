@@ -1,2 +1,1 @@
-# -SAMPVNN-Project
-Pawn
+SA-MP Scripting
