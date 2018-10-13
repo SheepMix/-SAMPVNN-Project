@@ -268,11 +268,13 @@ stock CheckSpeedo(playerid,vehicleid)
 		PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][5], 0xFFc92626FF);
 	}
 	else return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][5], 255);
-	if(GetVehicleSpeed(vehicleid) < 20.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][2], 255);
-	if(GetVehicleSpeed(vehicleid) < 40.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][2], 255);
-	if(GetVehicleSpeed(vehicleid) < 60.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][3], 255);
-	if(GetVehicleSpeed(vehicleid) < 80.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][4], 255);
-	if(GetVehicleSpeed(vehicleid) < 100.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][5], 255);
+	//Sua Loi Bug--------------------------------------------------------------------------------------------------|
+       	if(GetVehicleSpeed(vehicleid) < 20.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][2], 255); |
+	if(GetVehicleSpeed(vehicleid) < 40.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][2], 255); |
+	if(GetVehicleSpeed(vehicleid) < 60.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][3], 255); |
+	if(GetVehicleSpeed(vehicleid) < 80.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][4], 255); |
+	if(GetVehicleSpeed(vehicleid) < 100.0) return PlayerTextDrawBoxColor(playerid, TDEditor_PTD[playerid][5], 255);|
+	//Eng----------------------------------------------------------------------------------------------------------|
 	return 1;
 }
 
